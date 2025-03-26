@@ -27,9 +27,6 @@
 (postgre на пк) select * from users; или (через браузер) "http://localhost:5000/api/users?db=sqlite"
 
 
-# Ответ:
-["user1", "user2", "user3"]
-
 # 2. Получение информации о конкретном пользователе
 
 **Метод:** `GET`  
@@ -43,9 +40,6 @@
 
 # Пример запроса:
 (postgre на пк) SELECT * FROM users WHERE login = '123'; или (через браузер) "http://localhost:5000/api/users/123?db=sqlite"
-
-# Ответ: 
-  "login": "user1"
 
 # 3. Создание нового пользователя
 
@@ -70,13 +64,6 @@
 # Пример запроса:
 (postgre на пк) INSERT INTO users (username, password) VALUES ('Dimasik', 'pass');
 
-# Ответ:
-  "message": "Пользователь создан"
-
-
-# Если данные неполные или некорректные:
-  "error": "Login and password are required"
-
 # 4. Удаление пользователя
 
 **Метод:** `DELETE`  
@@ -90,9 +77,6 @@
 
 # Пример запроса:
 (postgre на пк) DELETE FROM users WHERE login = 'Dimasik';
-
-# Ответ:
-  "message": "Пользователь удалён"
 
 
 
