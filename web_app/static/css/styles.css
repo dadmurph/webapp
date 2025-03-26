@@ -1,0 +1,97 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb; /* Светлый фон для страницы */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Стили контейнера */
+.container {
+    background-color: #fff; /* Белый фон для содержимого */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Ссылки */
+.links p {
+    font-size: 18px;
+    color: #444;
+}
+
+.links a {
+    color: #454cee;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #2d3bff; /* Цвет при наведении */
+}
+
+/* Стили кнопок */
+button {
+    font: 16px Arial, sans-serif;
+    background-color: #454cee;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2d3bff; /* Более темный синий при наведении */
+}
+
+/* Стили для форм */
+form {
+    font: 14px Arial, sans-serif;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    color: #777991;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+input[type=text], input[type=password] {
+    text-align: center;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font: 14px Arial, sans-serif;
+    color: #333;
+    border-radius: 4px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border-color: #454cee;
+    outline: none;
+}
+
+form input[type=text], form input[type=password] {
+    margin-bottom: 20px;
+}
